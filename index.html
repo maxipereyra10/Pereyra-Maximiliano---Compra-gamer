@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Vinculo css-->
+    <link rel="stylesheet" href="style.css">
+    <title>Formulariost</title>
+</head>
+<body>
+    <header class="speaker-from-header">
+        <h1>Speaker Submission</h1>
+        <p>
+            <em>¿Want to speak at our fake conference?</em>
+        </p>
+    </header>
+
+    <!--Action es donde agrego la ruta de mi archivo php-->
+    <!--method es la forma como se envia la info del formulario-->
+    <form action="form.php" method="post" class="speaker-from">
+        <div class="form-row">
+            <label for="full-name">Nombre</label>
+            <input type="text" id="full-name" placeholder="Ej: Maxi Pereyra" name="nombre" required>
+        </div>
+
+        <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Ej: maxipereyra997@gmail.com" name="email" required>
+        </div>
+
+        <fieldset class="legacy-form-row">
+            <legend>Type of talk</legend>
+            <input type="radio" name="talk-type" id="talk-type-1">
+            <label for="talk-type-1" class="radio-label">Main stagec</label>
+
+            <input type="radio" name="talk-type" id="talk-type-2" checked>
+            <label for="talk-type-2" class="radio-label">Workshop</label>
+        </fieldset>
+
+        <div class="form-row">
+            <label for="abstract">Textarea</label>
+            <textarea name="textarea" id="abstract"></textarea>
+            <p class="instructions"> Describe your talk in 500 words or less</p>
+        </div>
+
+        <div class="form-row">
+            <button type="submit">Enviar</button>
+        </div>
+
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
